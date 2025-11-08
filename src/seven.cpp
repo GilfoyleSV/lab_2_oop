@@ -1,4 +1,4 @@
-#include "seven.h"
+#include "../include/seven.h"
 
 Seven::Seven(){
     digits = new unsigned char[1];

@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "./src/seven.h"
+#include "./include/seven.h"
 
 // === ТЕСТЫ КОНСТРУКТОРОВ ===
 
@@ -85,12 +85,12 @@ TEST(SevenArithmeticTest, AddWithCarry) {
 }
 
 TEST(SevenArithmeticTest, SubtractSimple) {
-    Seven a("10"); // 7
-    Seven b("1");  // 1
+    Seven a("10");
+    Seven b("1");
     Seven c = a.subtract(b);
     std::ostringstream oss;
     c.print(oss);
-    EXPECT_EQ(oss.str(), "6"); // 7 - 1 = 6
+    EXPECT_EQ(oss.str(), "6"); 
 }
 
 TEST(SevenArithmeticTest, SubtractThrowsIfNegative) {
